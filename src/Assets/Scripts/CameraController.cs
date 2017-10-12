@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -10,10 +11,10 @@ public class CameraController : MonoBehaviour
     private Vector3 lastPlayerPosition;
     private float distanceToMove;
 
-	// Use this for initialization
-	void Start ()
-	{
-	    player = FindObjectOfType<PlayerController>();
+    // Use this for initialization
+    void Start ()
+    {
+        player = FindObjectOfType<PlayerController>();
 	    lastPlayerPosition = player.transform.position;
 	}
 	
